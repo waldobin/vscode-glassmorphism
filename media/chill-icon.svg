@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none">
+  <defs>
+    <linearGradient id="chillGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#87AF87"/>
+      <stop offset="100%" stop-color="#B8B8D1"/>
+    </linearGradient>
+    <radialGradient id="chillGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#87AF87" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#87AF87" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="12" cy="12" r="9" stroke="url(#chillGrad)" stroke-width="1.8" stroke-dasharray="4 2"/>
+  <circle cx="12" cy="12" r="5" fill="url(#chillGlow)"/>
+  <circle cx="12" cy="12" r="3.2" fill="url(#chillGrad)"/>
+  <path d="M12 4.5V2M12 22v-2.5M4.5 12H2M22 12h-2.5" stroke="#87AF87" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

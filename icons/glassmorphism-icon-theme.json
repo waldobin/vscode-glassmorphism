@@ -1,0 +1,274 @@
+{
+  "iconDefinitions": {
+    "_folder": {
+      "iconPath": "./folder.svg"
+    },
+    "_folder_open": {
+      "iconPath": "./folder-open.svg"
+    },
+    "_file": {
+      "iconPath": "./file.svg"
+    },
+    "_typescript": {
+      "iconPath": "./typescript.svg"
+    },
+    "_javascript": {
+      "iconPath": "./javascript.svg"
+    },
+    "_json": {
+      "iconPath": "./json.svg"
+    },
+    "_markdown": {
+      "iconPath": "./markdown.svg"
+    },
+    "_image": {
+      "iconPath": "./image.svg"
+    },
+    "_git": {
+      "iconPath": "./git.svg"
+    },
+    "_license": {
+      "iconPath": "./license.svg"
+    },
+    "_package": {
+      "iconPath": "./package.svg"
+    },
+    "_settings": {
+      "iconPath": "./settings.svg"
+    },
+    "_css": {
+      "iconPath": "./css.svg"
+    },
+    "_html": {
+      "iconPath": "./html.svg"
+    },
+    "_rust": {
+      "iconPath": "./rust.svg"
+    },
+    "_go": {
+      "iconPath": "./go.svg"
+    },
+    "_python": {
+      "iconPath": "./python.svg"
+    },
+    "_java": {
+      "iconPath": "./java.svg"
+    },
+    "_kotlin": {
+      "iconPath": "./kotlin.svg"
+    },
+    "_swift": {
+      "iconPath": "./swift.svg"
+    },
+    "_c": {
+      "iconPath": "./c.svg"
+    },
+    "_cpp": {
+      "iconPath": "./cpp.svg"
+    },
+    "_ruby": {
+      "iconPath": "./ruby.svg"
+    },
+    "_yaml": {
+      "iconPath": "./yaml.svg"
+    },
+    "_docker": {
+      "iconPath": "./docker.svg"
+    },
+    "_dart": {
+      "iconPath": "./dart.svg"
+    },
+    "_flutter": {
+      "iconPath": "./flutter.svg"
+    },
+    "_shell": {
+      "iconPath": "./shell.svg"
+    },
+    "_sql": {
+      "iconPath": "./sql.svg"
+    },
+    "_php": {
+      "iconPath": "./php.svg"
+    },
+    "_env": {
+      "iconPath": "./env.svg"
+    },
+    "_vue": {
+      "iconPath": "./vue.svg"
+    },
+    "_angular": {
+      "iconPath": "./angular.svg"
+    },
+    "_storyboard": {
+      "iconPath": "./storyboard.svg"
+    },
+    "_apple_shield": {
+      "iconPath": "./apple-shield.svg"
+    },
+    "_gradle": {
+      "iconPath": "./gradle.svg"
+    },
+    "_android": {
+      "iconPath": "./android.svg"
+    }
+  },
+  "folder": "_folder",
+  "folderExpanded": "_folder_open",
+  "file": "_file",
+  "fileExtensions": {
+    "ts": "_typescript",
+    "tsx": "_typescript",
+    "js": "_javascript",
+    "jsx": "_javascript",
+    "mjs": "_javascript",
+    "cjs": "_javascript",
+    "json": "_json",
+    "md": "_markdown",
+    "markdown": "_markdown",
+    "svg": "_image",
+    "png": "_image",
+    "jpg": "_image",
+    "jpeg": "_image",
+    "gif": "_image",
+    "webp": "_image",
+    "ico": "_image",
+    "vsix": "_package",
+    "zip": "_package",
+    "tar": "_package",
+    "gz": "_package",
+    "css": "_css",
+    "scss": "_css",
+    "sass": "_css",
+    "less": "_css",
+    "html": "_html",
+    "htm": "_html",
+    "rs": "_rust",
+    "rlib": "_rust",
+    "go": "_go",
+    "py": "_python",
+    "pyw": "_python",
+    "pyx": "_python",
+    "ipynb": "_python",
+    "java": "_java",
+    "jar": "_java",
+    "class": "_java",
+    "jsp": "_java",
+    "kt": "_kotlin",
+    "kts": "_kotlin",
+    "swift": "_swift",
+    "c": "_c",
+    "h": "_c",
+    "cpp": "_cpp",
+    "hpp": "_cpp",
+    "cc": "_cpp",
+    "cxx": "_cpp",
+    "hxx": "_cpp",
+    "rb": "_ruby",
+    "erb": "_ruby",
+    "gemspec": "_ruby",
+    "yaml": "_yaml",
+    "yml": "_yaml",
+    "dockerfile": "_docker",
+    "dart": "_dart",
+    "sh": "_shell",
+    "bash": "_shell",
+    "zsh": "_shell",
+    "fish": "_shell",
+    "ksh": "_shell",
+    "sql": "_sql",
+    "sqlite": "_sql",
+    "db": "_sql",
+    "pgsql": "_sql",
+    "php": "_php",
+    "phtml": "_php",
+    "env": "_env",
+    "toml": "_settings",
+    "lock": "_package",
+    "plist": "_settings",
+    "gradle": "_gradle",
+    "vue": "_vue",
+    "storyboard": "_storyboard",
+    "xib": "_storyboard",
+    "entitlements": "_apple_shield",
+    "xcprivacy": "_apple_shield",
+    "apk": "_android",
+    "aab": "_android",
+    "component.ts": "_angular",
+    "component.html": "_angular",
+    "component.css": "_angular",
+    "component.scss": "_angular",
+    "directive.ts": "_angular",
+    "pipe.ts": "_angular",
+    "module.ts": "_angular"
+  },
+  "fileNames": {
+    ".gitignore": "_git",
+    ".vscodeignore": "_git",
+    "package.json": "_package",
+    "package-lock.json": "_package",
+    "tsconfig.json": "_settings",
+    "tsconfig.extension.json": "_settings",
+    "LICENSE": "_license",
+    "LICENSE.txt": "_license",
+    "LICENSE.md": "_license",
+    "README.md": "_markdown",
+    "readme.md": "_markdown",
+    "Cargo.toml": "_rust",
+    "Cargo.lock": "_rust",
+    "go.mod": "_go",
+    "go.sum": "_go",
+    "go.work": "_go",
+    "requirements.txt": "_python",
+    "Pipfile": "_python",
+    "Pipfile.lock": "_python",
+    "pyproject.toml": "_python",
+    "Gemfile": "_ruby",
+    "Gemfile.lock": "_ruby",
+    "Rakefile": "_ruby",
+    "Podfile": "_ruby",
+    "Podfile.lock": "_ruby",
+    "Fastfile": "_ruby",
+    "Appfile": "_ruby",
+    "Matchfile": "_ruby",
+    "build.gradle": "_gradle",
+    "build.gradle.kts": "_gradle",
+    "settings.gradle": "_gradle",
+    "settings.gradle.kts": "_gradle",
+    "gradlew": "_gradle",
+    "gradlew.bat": "_gradle",
+    "gradle-wrapper.properties": "_gradle",
+    "AndroidManifest.xml": "_android",
+    "PrivacyInfo.xcprivacy": "_apple_shield",
+    "Runner.entitlements": "_apple_shield",
+    "angular.json": "_angular",
+    ".angular-cli.json": "_angular",
+    "App.vue": "_vue",
+    "CMakeLists.txt": "_c",
+    ".editorconfig": "_settings",
+    ".prettierrc": "_settings",
+    ".eslintrc": "_settings",
+    ".eslintrc.json": "_settings",
+    ".eslintrc.js": "_settings",
+    "eslint.config.js": "_settings",
+    "eslint.config.mjs": "_settings",
+    "vite.config.ts": "_typescript",
+    "vite.config.js": "_javascript",
+    "next.config.js": "_javascript",
+    "next.config.mjs": "_javascript",
+    "tailwind.config.js": "_javascript",
+    "tailwind.config.ts": "_typescript",
+    "Dockerfile": "_docker",
+    "docker-compose.yml": "_docker",
+    "docker-compose.yaml": "_docker",
+    ".dockerignore": "_docker",
+    "pubspec.yaml": "_flutter",
+    "pubspec.lock": "_flutter",
+    "Makefile": "_shell",
+    ".env": "_env",
+    ".env.local": "_env",
+    ".env.development": "_env",
+    ".env.production": "_env",
+    ".env.test": "_env",
+    ".env.example": "_env"
+  }
+}

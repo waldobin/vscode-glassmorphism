@@ -1,0 +1,175 @@
+{
+  "name": "vscode-glassmorphism",
+  "displayName": "VSCode Glassmorphism: Mindful Workspace",
+  "description": "Ultra-minimalist, soothing, and stress-reducing workspace featuring Glassmorphism Night & Day themes, Glassmorphism Minimal Icons, offline ambient soundscapes, Pomodoro focus ring, and micro-habits.",
+  "version": "0.0.1",
+  "publisher": "waldoxbin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waldobin/vscode-glassmorphism"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes",
+    "Programming Languages",
+    "Other"
+  ],
+  "keywords": [
+    "glassmorphism",
+    "chill",
+    "pomodoro",
+    "ambient",
+    "minimalist",
+    "theme",
+    "wellness",
+    "lofi",
+    "relaxation",
+    "toml",
+    "yaml"
+  ],
+  "main": "./dist/extension.js",
+  "icon": "media/icon.png",
+  "contributes": {
+    "languages": [
+      {
+        "id": "toml",
+        "aliases": [
+          "TOML",
+          "toml"
+        ],
+        "extensions": [
+          ".toml"
+        ],
+        "filenames": [
+          "Cargo.lock",
+          "Gopkg.lock",
+          "Pipfile",
+          "poetry.lock"
+        ],
+        "configuration": "./syntaxes/toml-language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "toml",
+        "scopeName": "source.toml",
+        "path": "./syntaxes/toml.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Glassmorphism Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/glassmorphism-night-color-theme.json"
+      },
+      {
+        "label": "Glassmorphism Day",
+        "uiTheme": "vs",
+        "path": "./themes/glassmorphism-day-color-theme.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "glassmorphism-minimal-icons",
+        "label": "Glassmorphism Minimal Icons",
+        "path": "./icons/glassmorphism-icon-theme.json"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "vscode-glassmorphism-sidebar",
+          "title": "Glassmorphism",
+          "icon": "media/chill-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "vscode-glassmorphism-sidebar": [
+        {
+          "type": "webview",
+          "id": "vscode-glassmorphism.chillView",
+          "name": "Mindful Workspace",
+          "icon": "media/chill-icon.svg",
+          "visibility": "visible"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "vscode-glassmorphism.openEditorPanel",
+        "title": "Open Mindful Workspace in Editor Tab",
+        "category": "Glassmorphism",
+        "icon": "$(heart)"
+      },
+      {
+        "command": "vscode-glassmorphism.toggleTimer",
+        "title": "Start / Pause Focus Timer (⏱️)",
+        "category": "Glassmorphism",
+        "icon": "$(watch)"
+      },
+      {
+        "command": "vscode-glassmorphism.stopAllAudio",
+        "title": "Stop All Ambient Audio (🔇)",
+        "category": "Glassmorphism",
+        "icon": "$(mute)"
+      }
+    ],
+    "configuration": {
+      "title": "Glassmorphism Workspace",
+      "properties": {
+        "vscode-glassmorphism.pomodoroDurationMinutes": {
+          "type": "number",
+          "default": 25,
+          "description": "Duration of focus Pomodoro session in minutes."
+        },
+        "vscode-glassmorphism.shortBreakMinutes": {
+          "type": "number",
+          "default": 5,
+          "description": "Duration of short rest break in minutes."
+        },
+        "vscode-glassmorphism.longBreakMinutes": {
+          "type": "number",
+          "default": 15,
+          "description": "Duration of long rest break in minutes."
+        },
+        "vscode-glassmorphism.waterGoal": {
+          "type": "number",
+          "default": 8,
+          "description": "Daily water glasses target."
+        },
+        "vscode-glassmorphism.stretchGoal": {
+          "type": "number",
+          "default": 4,
+          "description": "Daily stretch breaks target."
+        },
+        "vscode-glassmorphism.breatheGoal": {
+          "type": "number",
+          "default": 3,
+          "description": "Daily deep breathing sessions target."
+        },
+        "vscode-glassmorphism.soundNotifications": {
+          "type": "boolean",
+          "default": true,
+          "description": "Play subtle audio cues when Pomodoro sessions finish."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "build": "tsc -p ./",
+    "package": "npx @vscode/vsce package --no-dependencies",
+    "install:ext": "npx @vscode/vsce package --no-dependencies && code --install-extension vscode-glassmorphism-1.1.4.vsix --force"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.6.3"
+  }
+}
